@@ -1,6 +1,6 @@
 from pse2 import score, letter_dict
 
-def test_score_simple_word():
+def test_score_simple_word(word):
     # arrange
     word = "word"
     # act
@@ -8,7 +8,7 @@ def test_score_simple_word():
     # assert
     output == 8
     
-def test_score_word_with_extra_characters():
+def test_score_word_with_extra_characters(word):
     # arrange
     word = "Hello, world!"
     # act

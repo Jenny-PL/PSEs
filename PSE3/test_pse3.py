@@ -1,4 +1,4 @@
-from pse3 import *
+# from pse3 import *
 from alt_pse3 import *
 
 # example input 1:"GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT"

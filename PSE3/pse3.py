@@ -1,4 +1,8 @@
 def hamming_distance(strand1, strand2):
+    ''' 
+    input: two str of equal length, representing DNA strands
+    output: number of differences between the strands (int)
+    '''
     if len(strand1) == len(strand2):
         if type(strand1) and type(strand2) is str:
             if strand1 and strand2:

@@ -29,7 +29,6 @@ def test_find_pairs_to_reach_sum_non_int_within_list_returns_error():
     # arrange
     list = [3,5,7,"eight"]
     target_sum = 15
-    
     # act
     result = pairs_with_given_sum(list, target_sum)
     # assert

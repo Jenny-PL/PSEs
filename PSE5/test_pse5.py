@@ -27,9 +27,13 @@ def test_find_pairs_to_reach_sum_empty_returns_0():
 
 def test_find_pairs_to_reach_sum_non_int_within_list_returns_error():
     # arrange
-    list = [3,5,7,"eight"]
+    list = [3,5,7,'eight']
     target_sum = 15
     # act
     result = pairs_with_given_sum(list, target_sum)
     # assert
-    assert TypeError('Please give a list of integers')
+    assert result is TypeError('Please give a list of integers')
+    # Question: why does this test fail?? (see output below)
+
+#     AssertionError: assert TypeError('Please give a list of integers') is TypeError('Please give a list of integers')
+# E        +  where TypeError('Please give a list of integers') = TypeError('Please give a list of integers')

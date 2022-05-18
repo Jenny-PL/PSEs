@@ -17,12 +17,14 @@
 def missing_k_num(array, k):
     for item in array:
         if not type(item) == int:
+            # return "List should have integers only"
             raise ValueError("List should have integers only")
         if item < 1 or item > 1000:
+            # return "All list items should be integers greater than zero and less than 1000."
             raise ValueError("All list items should be integers greater than zero and less than 1000.")
     
     if k > (1000 - len(array)):
-        return f"there are not {k} missing numbers"
+        raise ValueError(f"there are not {k} missing numbers")
     
     if array == []:
         return k

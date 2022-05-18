@@ -14,6 +14,9 @@
 #   -- next check if list[i] is equal to dict[incremented_key]; if it is not, add 1 to missing variable number.  (Make this a while loop; while list[i] != dict[key]
 #  -- Once missing_number == k: return dictionary[key] for that index.
 
+from ast import If
+
+
 def missing_k_num(array, k):
     for item in array:
         if not type(item) == int:
@@ -46,10 +49,12 @@ def missing_k_num(array, k):
     # if get through whole list, and k is not zero... return last item in list + k
     return (k+array[-1])
         
-print(missing_k_num([1,3,4,5,7],2)) # 6
+print(missing_k_num([1,3,4,5,7,12],2)) # 6
 print(missing_k_num([1,3,4,5,7],12)) # 17  array[-1]= 7, k=10
 
+
     
+        
     
 
 
